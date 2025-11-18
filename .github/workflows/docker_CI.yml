@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Pull image from Docker Hub
-        run: docker pull zthole/text-analyzer:latest
+        run: docker pull zthole/text_analyzer:latest
 
       - name: Run container tests
-        run: docker run zthole/text-analyzer:latest
+        run: docker run zthole/text_analyzer:latest
