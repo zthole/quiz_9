@@ -1,0 +1,16 @@
+name: Docker Image Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Pull image from Docker Hub
+        run: docker pull zthole/text-analyzer:latest
+
+      - name: Run container tests
+        run: docker run zthole/text-analyzer:latest
