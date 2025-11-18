@@ -1,7 +1,5 @@
 name: Docker Image Test
 
-docker login
-
 on:
   push:
   pull_request:
